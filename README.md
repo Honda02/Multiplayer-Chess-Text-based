@@ -1,10 +1,9 @@
-<p align="center"><img width="400" src="..\res\img\report\logo.png" /></p>
+<p align="center"><img width="400" src="res\img\report\logo.png" /></p>
 
 <div align="center">
   <!-- Build Status -->
   
    ![CI/CD](https://github.com/softeng1920-inf-uniba/progetto1920-stonebraker/workflows/CI/CD/badge.svg)
-
 
   <!-- Test Coverage -->
   <a href="https://coveralls.io/github/softeng1920-inf-uniba/progetto1920-stonebraker?branch=master">
@@ -17,7 +16,9 @@
 <h3 align="center">Questo è un software per il gioco degli scacchi per 2 giocatori, sviluppato con Java per console.</h3>
 
 <br/><br/>
+
 # Indice
+
 ---
 
 1. ### <a href="#int" >Introduzione</a>
@@ -28,7 +29,7 @@
 
 4. ### <a href="#00d" >00 Design</a>
 
-5. ### <a href="#sum" >Riepilogo del test  </a>
+5. ### <a href="#sum" >Riepilogo del test </a>
 
 6. ### <a href="#man" >Manuale utente</a>
 
@@ -37,10 +38,12 @@
 8. ### <a href="#ana" >Analisi retrospettiva</a>
 
 <br/><br/><br/>
+
 # <div id="int" >1. Introduzione </div>
+
 ---
 
-<p align="center"><img width="750" src="../res/img/report/screenshot1.png" /></p>
+<p align="center"><img width="750" src="res/img/report/screenshot1.png" /></p>
 
 ## 1.1 Il Progetto
 
@@ -48,78 +51,87 @@ Questo è il progetto presentato del team **Stonebraker** come prova di esonero 
 
 ## 1.2 Il Team
 
-| [<img src="https://avatars1.githubusercontent.com/u/61477371?s=460&u=aabc1eba979c36c9157bfe207f6df48faece7446&v=4" width="128px;"/><br /><sub><b>Honda02</b></sub>](https://github.com/Honda02)<br />|[<img src="https://avatars1.githubusercontent.com/u/61516305?s=400&u=2fdc05d21ff24bfa8a9606658f706ebcb53ed5bb&v=4" width="128px;"/><br /><sub><b>Xav147</b></sub>](https://github.com/Xav147)<br />|[<img src="https://avatars2.githubusercontent.com/u/61560556?s=460&u=e78c1e5e08a092941e3bb87540e64355ab15d6b8&v=4" width="128px;"/><br /><sub><b>claudiovalen</b></sub>](https://github.com/claudiovalen)<br />|[<img src="https://avatars3.githubusercontent.com/u/61425967?s=400&u=0fbe7dbf427b6961e400dc7dada3c8036c9c9dfe&v=4" width="128px;"/><br /><sub><b>Giuseppecapozza</b></sub>](https://github.com/Giuseppecapozza)<br />|[<img src="https://avatars0.githubusercontent.com/u/61516837?s=460&u=7f637be31a2df5d6a2f3b5e3052b7576c44b8d63&v=4" width="128px;"/><br /><sub><b>l-alicino</b></sub>](https://github.com/l-alicino)<br />|[<img src="https://avatars1.githubusercontent.com/u/61549380?s=400&u=84428bee266399d27d6b5a5191e3fb798404499f&v=4" width="128px;"/><br /><sub><b>Amiri21</b></sub>](https://github.com/Amiri21)<br />
-| :-: | :-: | :-: | :-: | :-: | :-: |
+| [<img src="https://avatars1.githubusercontent.com/u/61477371?s=460&u=aabc1eba979c36c9157bfe207f6df48faece7446&v=4" width="128px;"/><br /><sub><b>Honda02</b></sub>](https://github.com/Honda02)<br /> | [<img src="https://avatars1.githubusercontent.com/u/61516305?s=400&u=2fdc05d21ff24bfa8a9606658f706ebcb53ed5bb&v=4" width="128px;"/><br /><sub><b>Xav147</b></sub>](https://github.com/Xav147)<br /> | [<img src="https://avatars2.githubusercontent.com/u/61560556?s=460&u=e78c1e5e08a092941e3bb87540e64355ab15d6b8&v=4" width="128px;"/><br /><sub><b>claudiovalen</b></sub>](https://github.com/claudiovalen)<br /> | [<img src="https://avatars3.githubusercontent.com/u/61425967?s=400&u=0fbe7dbf427b6961e400dc7dada3c8036c9c9dfe&v=4" width="128px;"/><br /><sub><b>Giuseppecapozza</b></sub>](https://github.com/Giuseppecapozza)<br /> | [<img src="https://avatars0.githubusercontent.com/u/61516837?s=460&u=7f637be31a2df5d6a2f3b5e3052b7576c44b8d63&v=4" width="128px;"/><br /><sub><b>l-alicino</b></sub>](https://github.com/l-alicino)<br /> | [<img src="https://avatars1.githubusercontent.com/u/61549380?s=400&u=84428bee266399d27d6b5a5191e3fb798404499f&v=4" width="128px;"/><br /><sub><b>Amiri21</b></sub>](https://github.com/Amiri21)<br /> |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 <br/><br/><br/>
+
 # <div id="mod" >2. Modello di dominio</div>
 
-<p align="center"><img width="800px" src="..\res\img\report\modellazione_dominio.png" /></p>
-
+<p align="center"><img width="800px" src="res\img\report\modellazione_dominio.png" /></p>
 
 <br/><br/><br/>
+
 # <div id="req" >3. Requisiti specifici</div>
 
 ## **3.1 Requisiti funzionali**
+
 Questa sezione include i requisiti che specificano tutte le azioni fondamentali del sistema software.
--  Il giocatore deve poter visualizzare l’elenco dei comandi disponibili.
--  Il giocatore deve poter iniziare una nuova partita.
--  Il giocatore deve poter visualizzare la scacchiera.
--  Il giocatore deve poter visualizzare le catture.
--  Il giocatore deve poter visualizzare il vantaggio materiale.
--  Il giocatore deve poter chiudere il gioco.
--  Il bianco è il primo a muoversi. 
--  Il giocatore deve poter muovere i pezzi inserendo la notazione algebrica della mossa che vuole eseguire.
--  Il giocatore deve poter catturare i pezzi avversari inserendo la notazione algebrica della mossa che vuole eseguire.
--  Il giocatore deve poter visualizzare le mosse legali disponibili.
--  Il giocatore deve poter visualizzare le mosse legali disponibili per un singolo pezzo.
--  Un giocatore può offrire patta in qualsiasi momento.
--  Un giocatore deve ricevere un avviso con richiesta di conferma prima di pareggiare.
--  Il pareggio porta al termine del gioco. 
--  Un giocatore può rinunciare in qualsiasi momento durante il gioco. 
--  Un giocatore deve ricevere un avviso con richiesta di conferma prima di rinunciare.
--  La rinuncia da parte di un giocatore porta al termine del gioco.
+
+- Il giocatore deve poter visualizzare l’elenco dei comandi disponibili.
+- Il giocatore deve poter iniziare una nuova partita.
+- Il giocatore deve poter visualizzare la scacchiera.
+- Il giocatore deve poter visualizzare le catture.
+- Il giocatore deve poter visualizzare il vantaggio materiale.
+- Il giocatore deve poter chiudere il gioco.
+- Il bianco è il primo a muoversi.
+- Il giocatore deve poter muovere i pezzi inserendo la notazione algebrica della mossa che vuole eseguire.
+- Il giocatore deve poter catturare i pezzi avversari inserendo la notazione algebrica della mossa che vuole eseguire.
+- Il giocatore deve poter visualizzare le mosse legali disponibili.
+- Il giocatore deve poter visualizzare le mosse legali disponibili per un singolo pezzo.
+- Un giocatore può offrire patta in qualsiasi momento.
+- Un giocatore deve ricevere un avviso con richiesta di conferma prima di pareggiare.
+- Il pareggio porta al termine del gioco.
+- Un giocatore può rinunciare in qualsiasi momento durante il gioco.
+- Un giocatore deve ricevere un avviso con richiesta di conferma prima di rinunciare.
+- La rinuncia da parte di un giocatore porta al termine del gioco.
 
 ## **3.2 Requisiti non funzionali**
--  I pezzi della scacchiera devono essere visualizzati in carattere Unicode
--  Il codice deve rispettare le specifiche di stile di CheckStyle
--  Le segnalazioni di SpotBugs devono essere risolte
--  Le Javadoc devono trovarsi nella cartella doc/javadoc/
--  I test di unità devono trovarsi nella cartella src/test/
--  Devono essere applicati i principi dell'Object Oriented Design
--  Il linguaggio di programmazione utilizzato deve essere Java
+
+- I pezzi della scacchiera devono essere visualizzati in carattere Unicode
+- Il codice deve rispettare le specifiche di stile di CheckStyle
+- Le segnalazioni di SpotBugs devono essere risolte
+- Le Javadoc devono trovarsi nella cartella doc/javadoc/
+- I test di unità devono trovarsi nella cartella src/test/
+- Devono essere applicati i principi dell'Object Oriented Design
+- Il linguaggio di programmazione utilizzato deve essere Java
 
 ### **3.2.1 Elenco dei terminali supportati**
+
 Di seguito l’elenco dei terminali su cui poter eseguire il container dell’app scacchi:
 
 Linux:
+
 - terminal
 
 Mac OS
+
 - terminal
 
 Windows
+
 - Terminal del sottosistema Windows per Linux
 - Git Bash (in questo caso il comando Docker ha come prefisso winpty; es: winpty docker -it ....)
 
 <br/><br/><br/>
+
 # <div id="00d" >4. 00 Design</div>
 
 ## 4.1 Diagramma delle Classi
 
 ### 4.1.2 Diagramma Completo
 
-<p align="center"><img src="..\res\img\report\class_diagram.png" /></p>
+<p align="center"><img src="res\img\report\class_diagram.png" /></p>
 
 ### 4.1.3 Diagramma Barebones
 
-<p align="center"><img src="..\res\img\report\simple_class.png" /></p>
+<p align="center"><img src="res\img\report\simple_class.png" /></p>
 
 ## 4.2 Decisioni prese
 
 ### **4.2.1 AppMain**
 
-<p align="center"><img width="800px" src="..\res\img\report\S_play.png" />
+<p align="center"><img width="800px" src="res\img\report\S_play.png" />
 Sequence diagram della user story Play</p>
 
 L'**AppMain** è la classe principale del programma, si interfaccia con l'utente attraverso una serie di messaggi, gestendo il flusso di esecuzione del programma.
@@ -130,7 +142,7 @@ L'**AppMain** è la classe principale del programma, si interfaccia con l'utente
 
 Il **Controller** è la classe pensata per controllare la validità dell'input inserito dall'utente.
 
-È un componente di supporto ad **AppMain**, in quanto rimuove da quest'ultima il compito di controllare ciò che scrive l'utente. 
+È un componente di supporto ad **AppMain**, in quanto rimuove da quest'ultima il compito di controllare ciò che scrive l'utente.
 È pensata per essere ad alta coesione, a basso accoppiamento e facilmente espandibile; l'aggiunta di un nuovo comando è semplice e veloce.
 
 ### **4.2.3 Game**
@@ -139,8 +151,7 @@ Il **Controller** è la classe pensata per controllare la validità dell'input i
 
 Contiene informazioni di stato sulla partita, ad esempio: il turno, l'ultima mossa effettuata ecc.
 
-
-<p align="center"><img width="800px" src="..\res\img\report\S_captures.png" />
+<p align="center"><img width="800px" src="res\img\report\S_captures.png" />
 Sequence diagram della user story Captures</p>
 
 ### **4.2.4 Board**
@@ -149,7 +160,7 @@ La classe **Board** rappresenta l'astrazione di una scacchiera e gestisce la log
 
 Si occupa di ospitare i due giocatori, bianco e nero, aggiornando il loro stato e gestendo l'impatto che le decisioni di entrambi hanno sulla partita. È predisposta per la possibilità di importare partite.
 
-<p align="center"><img width="800px" src="..\res\img\report\S_move.png" />
+<p align="center"><img width="800px" src="res\img\report\S_move.png" />
 Sequence diagram della user story Move</p>
 
 ### **4.2.5 Player**
@@ -157,6 +168,7 @@ Sequence diagram della user story Move</p>
 La classe **Player** rappresenta l'astrazione del giocatore.
 
 Al suo interno racchiude tutto ciò che è essenziale per il giocatore:
+
 - Pezzi a sua disposizione, rappresentati dalla classe **Piece**
 - Pezzi avversari catturati
 - Mosse legali possibili, rappresentate dalla classe **Move**
@@ -166,6 +178,7 @@ Al suo interno racchiude tutto ciò che è essenziale per il giocatore:
 La classe **Piece** rappresenta l'astrazione del singolo pezzo.
 
 Contiene le informazioni relative allo stato del pezzo:
+
 - Il tipo di pedina
 - Il colore a cui appartiene
 - Se è stato mosso precedentemente
@@ -177,58 +190,58 @@ Contiene le informazioni relative allo stato del pezzo:
 Contiene le informazioni sulla mossa che può essere effettuata da un giocatore.
 
 Nello specifico:
+
 - Coordinate di partenza
 - Coordinate di arrivo
 - Notazione estesa della mossa
 
-
 ### **4.2.8 ChessForm**
-<p align="center"><img width="800px" src="..\res\img\report\S_moves.png" />
+
+<p align="center"><img width="800px" src="res\img\report\S_moves.png" />
 Sequence diagram della user story Moves</p>
 
 **ChessForm** rappresenta l'astrazione del formulario delle mosse, gestisce la storia della singola partita.
 
 Ha responsabilità ben definite: tiene traccia di tutte le mosse effettuate dai due giocatori e del risultato della partita.
 
-
-
 ### **4.2.9 Ansi**
 
 **Ansi** è una classe noECB, viene utilizzata per memorizzare i colori per la stampa della scacchiera e dei vari messaggi.
 
-### **4.2.10 Note** 
+### **4.2.10 Note**
 
 Abbiamo deciso di tenere tutte le classi importanti con visibilità **public**, andando contro quanto consigliato da CheckStyle, in quanto necessario per la gestione dei casi di test.
 
 <br/><br/><br/>
+
 # <div id="sum" >5. Riepilogo del test</div>
 
 <p align="center">
-  <img src="../res/img/report/riepilogo.png" width="750">
+  <img src="res/img/report/riepilogo.png" width="750">
 </p>
 <br>
 <p align="center">
-  <img src="../res/img/report/riepilogo-coveralls.png" width="750" height="450">
+  <img src="res/img/report/riepilogo-coveralls.png" width="750" height="450">
 </p>
 <br>
 <p align="center">
-  <img src="../res/img/report/coverage-classi.png" width="750" height="450">
+  <img src="res/img/report/coverage-classi.png" width="750" height="450">
 </p>
 
 [Link a Coveralls](https://coveralls.io/github/softeng1920-inf-uniba/progetto1920-stonebraker)
 
-
 <br/><br/><br/>
+
 # <div id="man" >6. Manuale utente</div>
 
 Segue la lista di tutti i comandi disponibili con la descrizione delle loro funzionalita ed una loro **demo** in console.
 
 ## Play
 
-È possibile utilizzare il comando ``play`` in qualsiasi momento per chiedere all'applicazione di avviare una nuova partita con mossa al bianco. Se precedentemente al comando è stata terminata una partita oppure questa è ancora in corso, il gioco chiedera conferma ed in caso positivo avvierà una nuova partita.  
+È possibile utilizzare il comando `play` in qualsiasi momento per chiedere all'applicazione di avviare una nuova partita con mossa al bianco. Se precedentemente al comando è stata terminata una partita oppure questa è ancora in corso, il gioco chiedera conferma ed in caso positivo avvierà una nuova partita.
 
 <details><summary><b>Visualizza play in console</b></summary>
-<img src="../res/img/report/play.gif" width="400" height="250" />
+<img src="res/img/report/play.gif" width="400" height="250" />
 </details>
 <br/>
 
@@ -236,10 +249,10 @@ Segue la lista di tutti i comandi disponibili con la descrizione delle loro funz
 
 ## Help
 
-È possibile utilizzare il comando ``help`` in qualsiasi momento per saperne di più sull'utilizzo e sulla sintassi di un comando, ad esempio quali opzioni sono disponibili e come comporre effettivamente il comando.
+È possibile utilizzare il comando `help` in qualsiasi momento per saperne di più sull'utilizzo e sulla sintassi di un comando, ad esempio quali opzioni sono disponibili e come comporre effettivamente il comando.
 
 <details><summary><b>Visualizza help in console</b></summary>
-<img src="../res/img/report/help.gif" width="400" height="250" />
+<img src="res/img/report/help.gif" width="400" height="250" />
 </details>
 <br/>
 
@@ -247,10 +260,10 @@ Segue la lista di tutti i comandi disponibili con la descrizione delle loro funz
 
 ## Board
 
-Sia durante una partita che una volta terminata, è possibile utilizzare il comando ``board`` per visualizzare la posizione attuale sulla scacchiera.
+Sia durante una partita che una volta terminata, è possibile utilizzare il comando `board` per visualizzare la posizione attuale sulla scacchiera.
 
 <details><summary><b>Visualizza board in console</b></summary>
-<img src="../res/img/report/board.gif" width="400" height="250" />
+<img src="res/img/report/board.gif" width="400" height="250" />
 </details>
 <br/>
 
@@ -258,10 +271,10 @@ Sia durante una partita che una volta terminata, è possibile utilizzare il coma
 
 ## Moves
 
-Sia durante una partita che una volta terminata, è possibile utilizzare il comando ``moves`` per visualizzare il formulario della partita con tutte le mosse giocate sino a quel momento ed eventualmente il risultato della partita.  
+Sia durante una partita che una volta terminata, è possibile utilizzare il comando `moves` per visualizzare il formulario della partita con tutte le mosse giocate sino a quel momento ed eventualmente il risultato della partita.
 
 <details><summary><b>Visualizza moves in console</b></summary>
-<img src="../res/img/report/moves.gif" width="400" height="250" />
+<img src="res/img/report/moves.gif" width="400" height="250" />
 </details>
 <br/>
 
@@ -269,10 +282,10 @@ Sia durante una partita che una volta terminata, è possibile utilizzare il coma
 
 ## Captures
 
-Sia durante una partita che una volta terminata, è possibile utilizzare il comando ``captures`` per visualizzare l'elenco di tutte le catture effettuate dai due giocatori.  
+Sia durante una partita che una volta terminata, è possibile utilizzare il comando `captures` per visualizzare l'elenco di tutte le catture effettuate dai due giocatori.
 
 <details><summary><b>Visualizza captures in console</b></summary>
-<img src="../res/img/report/captures.gif" width="400" height="250" />
+<img src="res/img/report/captures.gif" width="400" height="250" />
 </details>
 <br/>
 
@@ -283,7 +296,7 @@ Sia durante una partita che una volta terminata, è possibile utilizzare il coma
 Durante una partita, il giocatore possono inserire le mosse che intendono effetuare in [notazione algebrica](https://it.wikipedia.org/wiki/Notazione_algebrica). Nel corso della partita verrà sempre visualizzato il turno in atto prima dell'inserimento del comando. In caso di errore nell'inserimento o di mossa non valida verrà visualizzato l'errore corrispondente e il giocatore potrà reiserire la mossa.
 
 <details><summary><b>Visualizza move in console</b></summary>
-<img src="../res/img/report/move.gif" width="400" height="250" />
+<img src="res/img/report/move.gif" width="400" height="250" />
 </details>
 <br/>
 
@@ -291,17 +304,16 @@ Durante una partita, il giocatore possono inserire le mosse che intendono effetu
 
 ## Legal-moves
 
-Durante una partita, uno giocatore può utilizzare il comando ``legal-moves`` per visualizzare l'elenco completo delle mosse disponibili nella sua posizione, visualizzate in [notazione algebrica](https://it.wikipedia.org/wiki/Notazione_algebrica) estesa.
+Durante una partita, uno giocatore può utilizzare il comando `legal-moves` per visualizzare l'elenco completo delle mosse disponibili nella sua posizione, visualizzate in [notazione algebrica](https://it.wikipedia.org/wiki/Notazione_algebrica) estesa.
 
 <details><summary><b>Visualizza legal-moves in console</b></summary>
-<img src="../res/img/report/legal-moves.gif" width="400" height="250" />
+<img src="res/img/report/legal-moves.gif" width="400" height="250" />
 </details>
 
-
-Una variante del comando permette al giocatore di utilizzare ``legal-moves [square]`` per visualizzare sulla scacchiera le mosse legali per il pezzo presente nello ``[square]`` selezionato, evidenziando il pezzo in giallo, le possibili mosse in verde e le catture in rosso. Segue l'elenco completo delle mosse disponibili nella sua posizione.
+Una variante del comando permette al giocatore di utilizzare `legal-moves [square]` per visualizzare sulla scacchiera le mosse legali per il pezzo presente nello `[square]` selezionato, evidenziando il pezzo in giallo, le possibili mosse in verde e le catture in rosso. Segue l'elenco completo delle mosse disponibili nella sua posizione.
 
 <details><summary><b>Visualizza legal-moves [square] in console</b></summary>
-<img src="../res/img/report/legal-moves2.gif" width="400" height="250" />
+<img src="res/img/report/legal-moves2.gif" width="400" height="250" />
 </details>
 <br/>
 
@@ -309,10 +321,10 @@ Una variante del comando permette al giocatore di utilizzare ``legal-moves [squa
 
 ## Material
 
-Sia durante una partita che una volta terminata, è possibile utilizzare il comando ``material`` per visualizzare l'elenco di tutte le pedine di entrambi i giocatori e il calcolo del loro [valore materiale](https://it.wikipedia.org/wiki/Valore_dei_pezzi_degli_scacchi) . 
+Sia durante una partita che una volta terminata, è possibile utilizzare il comando `material` per visualizzare l'elenco di tutte le pedine di entrambi i giocatori e il calcolo del loro [valore materiale](https://it.wikipedia.org/wiki/Valore_dei_pezzi_degli_scacchi) .
 
 <details><summary><b>Visualizza material in console</b></summary>
-<img src="../res/img/report/material.gif" width="400" height="250" />
+<img src="res/img/report/material.gif" width="400" height="250" />
 </details>
 <br/>
 
@@ -320,10 +332,10 @@ Sia durante una partita che una volta terminata, è possibile utilizzare il coma
 
 ## Draw
 
-Durante una partita, uno dei giocatori può decidere di chiedere al suo avversario la patta, utilizzando il comando ``draw``. Il gioco chiedera al suo avversario se intende accettare o negare la patta. Se l'avversario decide di accettare, la partita terminerà in parità, altrimenti si riprende il normale svoglimento del gioco.
+Durante una partita, uno dei giocatori può decidere di chiedere al suo avversario la patta, utilizzando il comando `draw`. Il gioco chiedera al suo avversario se intende accettare o negare la patta. Se l'avversario decide di accettare, la partita terminerà in parità, altrimenti si riprende il normale svoglimento del gioco.
 
 <details><summary><b>Visualizza draw in console</b></summary>
-<img src="../res/img/report/draw.gif" width="400" height="250" />
+<img src="res/img/report/draw.gif" width="400" height="250" />
 </details>
 <br/>
 
@@ -331,10 +343,10 @@ Durante una partita, uno dei giocatori può decidere di chiedere al suo avversar
 
 ## Resign
 
-Durante una partita, uno dei giocatori può decidere di arrendersi utilizzando il comando ``resign`` e conferma la sua scelta. Il gioco terminerà immediatamente dichiarando il suo avversario come vincitore. Se il giocatore decide di non confermare la sua scelta, il giocatore riprende normalmente.
+Durante una partita, uno dei giocatori può decidere di arrendersi utilizzando il comando `resign` e conferma la sua scelta. Il gioco terminerà immediatamente dichiarando il suo avversario come vincitore. Se il giocatore decide di non confermare la sua scelta, il giocatore riprende normalmente.
 
 <details><summary><b>Visualizza resign in console</b></summary>
-<img src="../res/img/report/resign.gif" width="400" height="250" />
+<img src="res/img/report/resign.gif" width="400" height="250" />
 </details>
 <br/>
 
@@ -342,23 +354,24 @@ Durante una partita, uno dei giocatori può decidere di arrendersi utilizzando i
 
 ## Quit
 
-Quando si intende chiudere l'applicazione il giocatore può utilizzare il comando ``quit``.
+Quando si intende chiudere l'applicazione il giocatore può utilizzare il comando `quit`.
 Una volta confermata la propria scelta l'applicazione verra terminata.
 
 <details><summary><b>Visualizza quit in console</b></summary>
-<img src="../res/img/report/quit.gif" width="400" height="250" />
+<img src="res/img/report/quit.gif" width="400" height="250" />
 </details>
 <br/>
 
 <br/><br/><br/>
+
 # <div id="dev" >7. Processo di sviluppo e organizzazione del lavoro</div>
 
 ## 7.1 Git History Grafico
 
-<img width="700px" src="../res/img/report/git-kraken-history.gif" />
+<img width="700px" src="res/img/report/git-kraken-history.gif" />
 <br/><br/>
 <details><summary><b>Visualizza l'history completa</b></summary>
-<img src="../res/img/report/Full_History.png" width="700px" />
+<img src="res/img/report/Full_History.png" width="700px" />
 </details>
 <br/>
 
@@ -390,14 +403,14 @@ Per [Sviluppo Iterativo](https://it.wikipedia.org/wiki/Modello_incrementale) si 
 ### **7.3.1 Pianificazione**
 
 All'inizio di ogni Sprint il primo step è stato quello di valutare di primo acchito, in base alle capacità di ognuno, come suddividere i compiti del backlog. Ci siamo assegnati il da farsi tenendo conto delle abilità e prefenze di ognuno di noi. In conclusione ci siamo prefissati una data di consegna intermedia.
- 
+
 ### **7.3.2 Sviluppo**
 
 Terminata la fase di pianificazione, gli incontri successivi sono stati dedicati allo sviluppo. Abbiamo cercato di tenerci in contatto durante tutta la fase di sviluppo, definendo incontri settimanali, affinché la gestione di eventuali problemi e difficolta fosse agevolata dalla presenza del gruppo con cui confrontarsi.
 
 ### **7.3.3 Revisione intermedia**
 
-La revisione intermedia ci ha permesso di controllare lo stato di avanzamento del lavoro, consentendoci di valutare più accuratamente i risultati delle scelte fatte durante la pianificazione iniziale, ed eventualmente supportare chi ha avuto dei problemi nello sviluppo del proprio compito. 
+La revisione intermedia ci ha permesso di controllare lo stato di avanzamento del lavoro, consentendoci di valutare più accuratamente i risultati delle scelte fatte durante la pianificazione iniziale, ed eventualmente supportare chi ha avuto dei problemi nello sviluppo del proprio compito.
 
 ### **7.3.4 Consegna**
 
